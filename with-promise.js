@@ -63,7 +63,7 @@ setTimeout(function () {
 
 /*
 
-    1) Next tick runs before promise and the former run before the event loop current operation
+    1) Next tick runs before promise and the former run after the event loop current operation
     or before it moves to next phase
 
 */
