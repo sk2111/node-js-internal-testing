@@ -66,4 +66,27 @@ setTimeout(function () {
     1) Next tick runs before promise and the former run after the event loop current operation
     or before it moves to next phase
 
+
+    OUTPUT:
+    
+    TIMEOUT 1
+    I am log
+    PROCESS NEXT TICK 1
+    PROCESS NEXT FLUD 1
+    PROCESS NEXT FLUD 1
+    PROCESS NEXT FLUD 1
+    PROCESS NEXT FLUD 1
+    I am process next ticker
+    I am Promise resolve 1
+    I am Promise resolve 2
+    TIMEOUT 2
+    PROCESS NEXT TICK 2
+    I am Promise resolve 2
+    TIMEOUT 3
+    PROCESS NEXT TICK 3
+    I am Promise resolve 3
+    SETIMMEDIATE 1
+    SETIMMEDIATE 2
+    SETIMMEDIATE 3
+    Timeout inside nexttick
 */
